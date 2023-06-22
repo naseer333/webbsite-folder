@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <style>
   .back-text{
@@ -28,50 +29,44 @@
     background-repeat: no-repeat;
     background-size:100% 3000px ;
   }
-  .month{
-    background-image: url(images/Background.png);
-    background-repeat: no-repeat;
-    background-size: 100% 950px;
-  }
-  .menuitem:hover{
-   color:white;
-  }
-  .music{
-    background-image: url(images/Background.png);
-  }
-  .footer{
-    list-style-type: none;
-  }
-  .btnback:hover{
- color: aqua;
-  }
+  
+  
   </style>
   <body>
     <div class="container-fluid bg-dark">
 
         <!-- row start -->
-        <div class="row bg-dark">
-            <div class="col-3 ">
-                <img src="images/logo.png" alt="" class="img-fluid pt-2 fs-5">
-            </div>
-            <div class="col pt-5">
-                <ul class="list-inline text-warning pt-3 ps-3 pb-4 border border-warning border-3 fs-3 ">
-                    <li class="list-inline-item ps-5 menuitem">Home</li>
-                    <li class="list-inline-item  ps-5 menuitem">Menu</li>
-                    <li class="list-inline-item  ps-5 menuitem">Specials</li>
-                    <li class="list-inline-item  ps-5 menuitem">About</li>
-                    <li class="list-inline-item  ps-5 menuitem">Method</li>
-
-
-                </ul>
-            </div>
+        <div class="bg-dark">
+            <div class="col-12 p-0">
+                <nav class="navbar bg-body-tertiary navbar-expand-lg navbar navBar p-0">
+                  <div class="container-fluid navBbar bg-dark">
+                    <a class="navbar-brand " href="#">
+                      <img src="Images/logo.png" class=" img-fluid  ps-4 h-75 w-75 ">
+                    </a>
+                    <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse ps-5 bg-dark" id="navbarNavAltMarkup">
+                      <div class="navbar-nav text-center border border border-warning border-3 ">
+                        <a class="nav-link active text-white fs-2 ps-5 " href="about.html">Home</a>
+                        <a class="nav-link text-white  fs-2 ps-5 " href="menu.html">Menu</a>
+                        <a class="nav-link fs-2 ps-5  text-white h2" href="#">Special</a>
+                        <a class="nav-link text-white fs-2 ps-5 " href="about.html">About</a>
+                        <a class="nav-link text-white fs-2 px-5 " href="#">Method</a>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
         </div>
+      
 <!-- row start -->
         
-        <div class="row mt-0 bg-dark">
+        <div class="row  bg-dark">
             
             <div class="col position-relative">
-                <img src="images/headerImage.png" alt="" class="img-fluid" id="img1">
+                <img src="images/header2.png" alt="" class="img-fluid" id="imgchange">
             </div>
             <div class="col   position-absolute ">
         
@@ -105,7 +100,7 @@
                 </div>
             </div>
             <div class="col-lg-4 col-sm-12 col-md-6 pt-5">
-                <div class="card ms-5 card-backgrnd border-warning border-4">
+                <div class="card ms-5 card-backgrnd border-warning border-4 ">
                     <h1 class="bg-warning">beef</h1>
                     <div class="card-body ">
                         
@@ -115,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12  col-md-6  mb-5 pt-5">
+            <div class="col-lg-4 col-sm-12  col-md-6   pt-5">
                 <div class="card ms-5 card-backgrnd border-warning border-4">
                     <h1 class="bg-warning">pork</h1>
                     <div class="card-body ">
@@ -172,11 +167,11 @@
                 <img src="images/experience.png" alt="" class="img-fluid pt-4 ps-4">
             </div>
             <div class="col pt-5 ms-5">
-                <h1 class="text-warning ps-5">GET a</h1>
+                <h1 class="text-warning ps-5">GET a free</h1>
                 <h1 class="text-warning ps-5"><b>GET 25% DISCOUNT</b></h1>
                 <P class="text-warning ps-5">ON YOUR NEXT DINER</P>
-                <BUtton class=" bg-warning ms-5 fs-3 btnback " >CLICK HER</BUtton><br>
-                <img src="images/logo.png" alt="" class="img-fluid ps-5 pt-5">
+                <a href=" FORM.HTML" class=" bg-warning ms-5 fs-1 text-white btnback ">click her</a><br>
+                <img src="images/logo.png" alt="" class="img-fluid ps-5 pt-5" id="getimg">
                 <h2 class="text-warning ps-5 pt-3">the meat experiense</h2>
             </div>
             
@@ -230,7 +225,7 @@
             
         </div>
         <div class="col mt-5">
-            <p class="fs-4 pt-3 ps-5 text-white">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. <br> Excepturi omnis dolore a i</p>
+            <p class="fs-4 pt-3 ps-5 text-white" >Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. <br> Excepturi omnis dolore a i</p>
         </div>
         <div class="col-12">
             <img src="images/liveMusic.png" alt="" class="img-fluid">
@@ -238,26 +233,42 @@
        </div> 
        <!-- footer start -->
        <div class="row music mt-5">
-          <div class="col-lg-6 col-sm-6 fs-2 ps-5 pt-5">
+          <div class="col-lg-6 col-sm-4 fs-2 ps-5 pt-5">
             <h1 class="fs-2 text-white ">USFUL LINKS</h1>
             <ul class="footer">
-                <li><a href="paragraph" class="text-white">HOME</a></li>
-                <li><a href="#"  class="text-white">About</a></li>
+                <li><a href="about.html" class="text-white">HOME</a></li>
+                <li><a href="about.html"  class="text-white">About</a></li>
                 <li><a href="#"  class="text-white">CONTECT</a></li>
                 <li><a href="#"  class="text-white">BLOG</a></li>
                 <li><a href=""  class="text-white">SHOP</a></li>
-                <li><a href=""  class="text-white">treck order</a></li>
+                <li><a href="FORM.HTML"  class="text-white">treck order</a></li>
 
 
             </ul>
           </div>
-          <div class="col-lg-6 col-sm-6  fs-2  ps-5 pt-5">
+          <div class="col-lg-4 col-sm-4 fs-2  ps-5 pt-5">
               <h1 class="text-white ">Subscribe Now</h1>
-              <input type="email" placeholder="enter your email" class="form-control h-25">
-              <button class="btn btn-warning  ">submit</button>
+              <input type="email" placeholder="enter your email" class="form-control h-25 mt-3">
+              <button class="btn btn-warning  fs-1 mt-5">submit</button>
           </div>
        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+
+
+<script>
+
+    
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+</script>
   </body>
 </html>
